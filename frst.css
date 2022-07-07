@@ -185,28 +185,3 @@ font-size:14px;}
     a{color:#121212;
         color:var(--black);
 }
-/*
-footer>div:nth-child(2)
-{margin-bottom:59px;margin-top:43px}
-footer>div:nth-child(2) 
-.tel{text-decoration:none}
-.container{left:0;margin-bottom:30px;padding-top:40px;
-    position:-webkit-sticky;position:sticky;
-    top:0;z-index:2
-.container,header{background-color:#fff}
-header{align-items:flex-start;display:flex;justify-content:space-between;margin:0 auto;padding:20px 0;width:94%}
-header .nav{text-align:right}
-header .nav a{color:#121212;color:var(--black);display:block;font-size:15px;margin-bottom:16px}
-header .nav>.active{font-weight:600}
-header .menu{display:none}
-header .logo_wrapper{background-color:#fff}
-.mobile_menu{display:none}
-.cardWrapper{display:flex;flex-wrap:wrap;justify-content:space-between;margin:0 auto;width:80%}
-.cardWrapper .card{margin-bottom:67px;width:47%}
-.cardWrapper .card .img_wrapper{height:348px;position:relative}
-.cardWrapper .card .img_wrapper img{height:100%;width:100%}
-.cardWrapper .card .img_wrapper .thumb{display:block;height:100%;left:0;position:absolute;top:0;transition:all .3s ease-in-out;width:100%}
-.cardWrapper .card .img_wrapper .thumb:hover{background-color:rgba(0,0,0,.4)}
-.cardWrapper .card .textBox{padding-top:20px}
-.cardWrapper .card .textBox p{font-size:16px;margin-bottom:7px}
-.cardWrapper .card .textBox span{opacity:.5}
