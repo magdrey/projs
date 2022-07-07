@@ -1,0 +1,134 @@
+<html>
+<head>
+    <title> DREYJOHNSON</title>
+    <link rel="stylesheet" href="frst.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+    <nav class="navbar">
+        <a href="frstest.html" class="nav-logo">Drey&#8482</a>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#info" class="nav-link">Info</a>
+            </li>
+            <li class="nav-item">
+                <a href="frstwork.html" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+                <a href="frstwritting.html" class="nav-link">writting</a>
+            </li>
+            
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+</header>
+
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLink = document.querySelectorAll(".nav-link");
+    
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+        </script>
+        <div class="middle">
+            <div class="topmess">
+        <h1>Info</h1>
+        <br>
+    <p2> download Cv<br></p2><br>
+    <p2> p: 08123456789 <br> </p2>
+    <p2> E: dreyjay@gmail.com <br> </p2><br>
+            </div>
+
+            <div class="dcheck">
+
+
+    <div class="carddinfo">
+        <h4>01</h4><br>
+        <p7>Words</p7>
+    </div><br>
+    <div class="infotext">
+        <h7>I’m a Product Designer turned Product Specialist based in Lagos, Nigeria.
+           </h7><p4> I am passionate about helping companies enhance their design experiences, refine their ideas and launch impactful solutions. In the past, I have helped companies with millions of customers grow their businesses, improve and create products by identifying product and user experience problems and opportunities, conceptualizing, prototyping, and working with developers (handoff).
+            I like to be involved at different stages of a digital project, from the seed of the idea, through to sketches, design and even the front-end and back-end build, this means I can jump in at any stage of a project, or take on the whole project, from design to build.
+             </p4>
+    </div><br>
+    <div class="carddinfo">
+        <h4>02</h4><br>
+        <p7>I've worked at </p7>
+    </div><br>
+    <div class="infotext">
+        <p4>Network IT Support</p4><br>
+        <p5>SABI Networks</p5><br>
+        <p4>Lead, Design</p4><br>
+        <p5>Enyata</p5><br>
+        <p4>Lead Ux Designer</p4><br>
+        <p5>Atlas Money</p5><br>
+        <p4>UX Designer</p4><br>
+        <p5>Hotels.ng</p5><br>
+        <p4>Vistual Designer</p4><br>
+        <p5>Drake Media</p5><br>
+    </div><br>
+    <div class="carddinfo">
+        <h4>03</h4><br>
+        <p7>I've volunteered at</p7>
+    </div><br>
+    <div class="infotext">
+       <table><tr><td><h7>DESIGN TEAM LEAD</h7><br>
+<p7>at Geekhood Media</p7></td><td>
+<h7>UX DESIGNER</h7><br>
+<p7>at Genesys Tech hub</p7></td></tr><tr><td>
+<h7>UX DESIGNER</h7><br>
+<p7>at Lawyerrp</p7></td><td>
+<h7>VISUAL DESIGNER</h7><br>
+<p7>at National Youth Summit</p7></td></tr></table>
+    </div><br>
+    <div class="carddinfo">
+        <h4>04</h4><br>
+        <p7>I studied at</p7>
+    </div><br>
+    <div class="infotext">
+<h7>B.ENG in Computer Engineering</h7><br>
+<p7>at University of Ilorin</p7>
+    </div><br>
+    
+        </div></div>
+
+
+    <footer>
+        <div>
+            <p><a href="#">instagram</a></P>
+            <p><a href="#">linkedin</a></P>
+            <p><a href="#">twitter</a></P>
+        </div>
+        <div>
+            <p><a class="tel" href="#">+234 123 4567 890</a></P>
+            <p><a href="#">dreyjay24@gmail.com</a></P>
+        </div>
+        <a href="#" class="nav-logo">Drey&#8482</a>
+
+    </footer>
+    
+    </div>
+</body>
+</html>

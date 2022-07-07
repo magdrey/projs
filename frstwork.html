@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title> DREYJOHNSON</title>
+    <link rel="stylesheet" href="frst.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+    <nav class="navbar">
+        <a href="frstest.html" class="nav-logo">Drey&#8482</a>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="frstinfo.html" class="nav-link">Info</a>
+            </li>
+            <li class="nav-item">
+                <a href="#work" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+                <a href="#writting" class="nav-link">writting</a>
+            </li>
+            
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+</header>
+
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLink = document.querySelectorAll(".nav-link");
+    
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+        </script>
+
+
+    
+        <div class="middle">
+            <div class="topmess">
+        <h1>Work</h1>
+        <br><br>
+    <p2> download Cv<br></p2><br>
+    <p2> p: 08123456789 <br> </p2>
+    <p2> E: dreyjay@gmail.com <br> </p2><br>
+            </div>
+            <div class="dcheck">
+
+    <div class="cardd">
+        <img src="images/eze1.webp">
+    <br>
+    <div class="text">
+        <p>Eze Wholesale</p>
+        <span>UX Design</span>
+    </div></div><br>
+    <div class="cardd">
+        <img src="images/talo.webp">
+    <br>
+    <div class="text">
+        <p>Taeillo</p>
+        <span>product</span>
+    </div></div><br>
+    <div class="cardd">
+        <img src="images/caro.webp">
+    <br>
+    <div class="text">
+        <p>Carrot credit</p>
+        <span>product & UX Design</span>
+    </div></div><br>
+    <div class="cardd">
+        <img src="images/spao.webp">
+    <br>
+    <div class="text">
+        <p>Spasara</p>
+        <span>product & UX Design</span>
+    </div></div><br>
+    <div class="cardd">
+        <img src="images/chaka.webp">
+    <br>
+    <div class="text">
+        <p>chaka</p>
+        <span>UX Design</span>
+    </div></div><br>
+    <div class="cardd">
+        <img src="images/inven.webp">
+    <br>
+    <div class="text">
+        <p>Ims</p>
+        <span>product & UX Design</span>
+    </div></div><br>
+    <div class="cardd">
+        <img src="images/merie.webp">
+    <br>
+    <div class="text">
+        <p>mirene</p>
+        <span>UX Design</span>
+    </div></div><br>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <p><a href="#">instagram</a></P>
+            <p><a href="#">linkedin</a></P>
+            <p><a href="#">twitter</a></P>
+        </div>
+        <div>
+            <p><a class="tel" href="#">+234 123 4567 890</a></P>
+            <p><a href="#">dreyjay24@gmail.com</a></P>
+        </div>
+        <a href="#" class="nav-logo">Drey&#8482</a>
+
+    </footer>
+    
+    </div>
+</body>
+</html>

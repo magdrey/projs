@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title> DREYJOHNSON</title>
+    <link rel="stylesheet" href="frst.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+    <nav class="navbar">
+        <a href="frstest.html" class="nav-logo">Drey&#8482</a>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="frstinfo.html" class="nav-link">Info</a>
+            </li>
+            <li class="nav-item">
+                <a href="frstwork.html" class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+                <a href="#frstwritting.html" class="nav-link">writting</a>
+            </li>
+            
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+</header>
+
+
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLink = document.querySelectorAll(".nav-link");
+    
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+        </script>
+        <div class="middle">
+            <div class="topmess">
+        <h1>UX Writtings</h1>
+        <br>
+    <p2> download Cv<br></p2><br>
+    
+            </div>
+
+            <div class="dcheck">
+
+    <div class="cardd">
+        <a href="https://kingsleyukeje.medium.com/finding-balance-in-design-implementation-using-the-fibonacci-sequence-4d589b7ea625"> <img src="images/w1.jpeg"></a>
+    <br><br>
+    <div class="text">
+        <p><a href="https://kingsleyukeje.medium.com/finding-balance-in-design-implementation-using-the-fibonacci-sequence-4d589b7ea625">finding Balance in Design implementation using the Fibonacci Sequence</p></a>
+    </div></div><br>
+    <div class="cardd">
+        <a href="https://kingsleyukeje.medium.com/positioning-for-global-impact-what-we-can-learn-from-enyatas-new-brand-identity-e66a1806c5b6"><img src="images/w2.png"></a>
+    <br><br>
+    <div class="text">
+        <p><a href="https://kingsleyukeje.medium.com/positioning-for-global-impact-what-we-can-learn-from-enyatas-new-brand-identity-e66a1806c5b6">
+            positioning for global impact :: what we can learn from enyata's new brand identity</p></a>
+    </div></div><br>
+    <div class="cardd">
+        <a href="https://kingsleyukeje.medium.com/hacking-the-human-mind-designing-addictive-user-interfaces-35ec250b66f1"><img src="images/w3.jpeg"></a>
+    <br><br>
+    <div class="text">
+        <p><a href="https://kingsleyukeje.medium.com/hacking-the-human-mind-designing-addictive-user-interfaces-35ec250b66f1">Hacking the human mind :: with sick shi music</p></a>
+    
+    </div></div><br>
+    <div class="cardd">
+        <a href="https://kingsleyukeje.medium.com/using-grids-to-build-responsive-web-ui-9a9bbe48dc8e"> <img src="images/w4.png"></a>
+    <br><br>
+    <div class="text">
+        <p><a href="https://kingsleyukeje.medium.com/using-grids-to-build-responsive-web-ui-9a9bbe48dc8e">using Grids to build responsive web UI</p></a>
+        
+    </div></div><br><br><br>
+    <br>
+        </div>
+        </div>
+
+
+    <footer>
+        <div>
+            <p><a href="#">instagram</a></P>
+            <p><a href="#">linkedin</a></P>
+            <p><a href="#">twitter</a></P>
+        </div>
+        <div>
+            <p><a class="tel" href="#">+234 123 4567 890</a></P>
+            <p><a href="#">dreyjay24@gmail.com</a></P>
+        </div>
+        <a href="#" class="nav-logo">Drey&#8482</a>
+
+    </footer>
+    
+    </div>
+
+</body>
+</html>
