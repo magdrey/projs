@@ -1,0 +1,310 @@
+*{
+    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     background-color: black;
+     
+ }
+ html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+ }
+ .nav-bar {
+    background-color: black;
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    display:flexbox;
+    align-items: center;
+    
+    
+ }
+ 
+.logo {
+    font-size: 34px;
+    font-weight: 500;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: cursive;
+    
+}
+   .logo p21{text-decoration: none;}
+
+.logo p19{
+    font-size: 34px;
+    font-weight: 500;
+    color: snow;
+    text-decoration: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-left: 20px;
+}
+.nav-item {
+    margin-left: 3rem;
+}
+.nav-link {
+    font-size: 19px;
+    color: blue;
+}
+.nav-link:hover {
+    color: yellow;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 668px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background:linear-gradient(to left, black, blueviolet, yellow);
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        transition: 0.3s;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item{
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .meetfam{
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        padding-top: 50px;
+        
+    
+    }  
+    .meetpr{display: none; position: relative;} img {vertical-align: middle;}
+    .meetpr {
+        height: 100%;position:relative; width: 100%px; background-color: black;
+        margin: 100%;}
+    .meetpr img{position: relative; display: flex;}
+    .meetpr img{height: 100%; width: 100%; background-color: black;}
+    .meetpr.is-active{display: block;}
+    .controls {
+        position: absolute;
+        top: calc(50% - 50px);
+        display: flex;
+        justify-content:space-between;
+        background-color: transparent;
+        width: 100%;
+    }
+    .controls button {
+        padding: 20px;
+        border: none;
+        font-size: 1.8rem;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .controls button:hover {background-color: rgba(0, 0, 0, 0);}
+    .dots-container {height: 20px; margin-top: 20px; text-align: center;}
+/*.prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    */.controls button .next{ align-items: right;}/*
+    .prev:hover, .next:hover {background-color: rgba(0, 0, 0, 0);}*/
+    .dot {
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: 0.6s ease;
+    }
+    .dots.is-active,
+    .dot:hover {background-color: #717171;}
+    .fade {
+        -moz-animation-name: fade;
+        -moz-animation-duration: 1.5;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {from{opacity: .4} to{opacity: 1}}
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        
+    }
+}
+
+.container{left:0;margin-bottom:30px; background-color: black;
+    padding-top:0px;position:-webkit-sticky;
+    position:sticky;top:0;z-index:2}
+    
+    .mid {
+        padding-left: 20px;
+        padding-right: 30px;
+        justify-content: space-between;
+        background-color: black;
+        color: snow;
+    }
+    
+    .meetfam{
+        display: flex;
+        background-color: black;
+    }
+    
+    .meetpr {
+        height: 100%;position:relative; width: 100%; background-color: black;
+        margin: 20px;}
+    .meetpr img{height: 100%; width: 100%; background-color: black;}
+
+    .abl, .tshi, .other {
+        height: 100%;position: relative; width: 100%; text-align: center;
+        margin: 20px;}
+        .abl h78, .tshi h78, .other h78 {
+        font-size: 32px;    
+        }
+        .abl p78, .tshi p78, .other p78 {
+            font-size: 22px;    
+            }
+            .abl p45, .tshi p45, .other p45 {
+                font-size: 18px;    
+                }
+        .meetpr h2{font-size: 26px;}
+        .meetpr p2{font-size: 16px;}
+        .ho-txt h1{font-size: 26px; padding-top: 30px; text-align: center;}
+        .ho-txt p1{font-size: 16px;}
+        h2{ font-size: 28px; text-align: center; padding-top: 20px; color:midnightblue}
+        .ho-pic {justify-content: center; display: flex;}
+        
+    
+
+
+    @media only screen and (max-width: 668px){
+        .upcomingabl, .techshi, .othershi {
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }   }
+        @media only screen and (min-width: 669px){
+            .upcomingabl, .techshi, .othershi{
+                color: white;
+            
+                display:grid;
+                grid-template-columns: 40% 5% 40% 5% ;
+                
+            column-gap: 40px;
+                row-gap:40px;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+            }
+            .meetpr{border: 1px;}
+        
+        }
+        footer{color:#8a91a8;color:var(--primary); text-align: center;
+            margin:0 auto;padding:400px 0 100px;width:94%}
+            
+            footer,footer div a{font-family:CourierPrime;
+                font-weight:400}
+            footer div a{color: green; 
+            display:inline-block; 
+            margin-bottom:10px;text-decoration:underline;
+            font-size:26px;}
+            .tel{text-decoration:none}
+            #news{
+                padding-top: 150px;
+            }
+            
+            /* for arts page meetpr-meetprart */
+
+
+
+            @media only screen and (max-width: 668px) {
+
+
+            .meetprart{display: grid; position: relative;} img {vertical-align: middle;}
+    .meetprart {
+        height: 100%;position:relative; width: 100%px; background-color: black;
+        margin: 100%;}
+    .meetprart img{position: relative; display: flex;}
+    .meetprart img{height: 100%; width: 100%; background-color: black;}
+    .meetprart.is-active{display: block;}
+            }
+
+ .meetfamart{
+                display: flex; flex-direction: column; padding-right: 30px;
+                background-color: black;}
+ .meetprart {
+                height: 100%;position:relative; width: 100%; background-color: black;
+                margin: 20px;}
+ .meetprart img{height: 100%; width: 100%; background-color: black;}
+ .meetprart p2{ color: snow; font-size: 18px;}
+ .ho-pic img{height: 300px; width: 300px; justify-self: center;}
+
+
+
+
+ @media only screen and (min-width: 668px) {
+
+
+    .meetfamart{
+ display:grid;
+ grid-template-columns: 40%  40% ;
+ 
+column-gap: 40px;
+ row-gap:40px;
+ justify-content: center;
+ align-items: center;
+    }
+    .meetprart {
+        border: 1px; padding: 50px;
+        height: 100%;position: relative; width: 100%;
+        margin: 20px;}
+        .meetprart img{height: 70%; width: 70%; background-color: black; padding: 50px;}
+        
+
+}
